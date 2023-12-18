@@ -40,12 +40,12 @@ snake-game-backend:
     icon: https://emojiapi.dev/api/v1/robot.svg
   containers:
     snake-game-backend:
-      image: env-4313.registry.local/snake-game-backend:main-de90c06
+      image: env-4321.registry.local/snake-game-backend:monk-main-2312181815-122d8c6
       build: .
       dockerfile: Dockerfile.snake-game-backend
   services:
     http-server-port:
-      description: Port for HTTP server to serve the snake game backend
+      description: HTTP server listening port
       container: snake-game-backend
       port: 3001
       host-port: 3001
